@@ -9,14 +9,18 @@
 import UIKit
 
 class AboutViewController: UIViewController {
-
+    var c:String?
+     @IBOutlet weak var lbl1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+if let i=c
+{
+        lbl1.text=i
         // Do any additional setup after loading the view.
     }
     
 
+    }
     /*
     // MARK: - Navigation
 

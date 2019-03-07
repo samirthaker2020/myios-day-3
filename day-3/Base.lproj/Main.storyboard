@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="29.23538230884558"/>
+            <point key="canvasLocation" x="1026" y="-92"/>
         </scene>
         <!--About US-->
         <scene sceneID="WiB-3i-Nm3">
@@ -91,14 +91,24 @@
                                     <action selector="btn1:" destination="dDx-fF-ZPI" eventType="touchUpInside" id="kzO-35-XLz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRU-ao-hK9">
+                                <rect key="frame" x="199" y="81" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bVA-yb-Yat"/>
                     </view>
+                    <connections>
+                        <outlet property="lbl1" destination="wRU-ao-hK9" id="mdJ-D8-dIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCH-VF-w6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2367" y="-45"/>
+            <point key="canvasLocation" x="3300" y="-92"/>
         </scene>
         <!--Home Screen-->
         <scene sceneID="1gs-Iq-QqI">
@@ -120,7 +130,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="dDx-fF-ZPI" kind="show" id="dGh-IX-TjY"/>
+                                    <segue destination="dDx-fF-ZPI" kind="show" identifier="movetoabout" id="dGh-IX-TjY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wv-Zc-eAL">
+                                <rect key="frame" x="171" y="305" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnway:" destination="vbv-nf-ClK" eventType="touchUpInside" id="a5f-yT-pcT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,11 +148,12 @@
                     <navigationItem key="navigationItem" title="Home Screen" id="wds-tw-gP6"/>
                     <connections>
                         <outlet property="lbluname" destination="zn0-r4-2Z3" id="oRM-Eo-h0f"/>
+                        <segue destination="dDx-fF-ZPI" kind="show" id="aWB-6C-EvS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loy-3P-Hvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="-63"/>
+            <point key="canvasLocation" x="2551" y="-92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u1r-v7-RRC">
@@ -170,7 +189,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yx4-rf-853" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="72.413793103448285"/>
+            <point key="canvasLocation" x="1823" y="-97"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dGh-IX-TjY"/>
+    </inferredMetricsTieBreakers>
 </document>
