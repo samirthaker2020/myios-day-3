@@ -26,5 +26,9 @@ class AboutViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func btn1(_ sender: UIButton) {
+          let v = self.navigationController?.viewControllers[1]
+        self.navigationController?.popToViewController(v!, animated: true)
+    }
+    
 }
