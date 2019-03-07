@@ -20,13 +20,23 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let nxt = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
+        
+        self.present(nxt, animated: true)
+    }
     @IBAction func btnsubmit(_ sender: UIButton) {
         if(txtusername.text == "s@gmail.com" && txtpassword.text == "samir")
         {
+           /* let sb = UIStoryboard(name: "Main", bundle: nil)
+            let nxt = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
+            
+            self.present(nxt, animated: true)*/
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let nxt = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
             
-            self.present(nxt, animated: true)
+            self.navigationController?.pushViewController(nxt, animated: true)
         }
         else
         {
