@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
             self.present(nxt, animated: true)*/
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let nxt = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
-            
+            nxt.uname=txtusername.text
             self.navigationController?.pushViewController(nxt, animated: true)
         }
         else

@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  AboutViewController.swift
 //  day-3
 //
 //  Created by MacStudent on 2019-03-06.
@@ -8,18 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class AboutViewController: UIViewController {
 
-    var uname:String?
-    @IBOutlet weak var lbluname: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton=true
-        
-if let e=uname
-{
-    self.lbluname.text="Welcome...\(e)"
-        }
+
         // Do any additional setup after loading the view.
     }
     
