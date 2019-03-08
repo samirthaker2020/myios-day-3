@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
         self.navigationItem.hidesBackButton=true
         self.navigationController?.hidesBarsOnTap=true
         self.navigationController?.navigationBar.isHidden=true
+        let userdefault = UserDefaults.standard
+        let uid=userdefault.string(forKey: "userid")
 if let e=uname
 {
     self.lbluname.text="Welcome...\(e)"
@@ -30,6 +32,13 @@ if let e=uname
     }
     
     
+ /* to store data permanently
+ 1.userDefault
+ 2.plist (property lines)
+ 3.coredata/sal lite
+ 4.xml/json
+ 5.rest API
+ */
  
 
     
